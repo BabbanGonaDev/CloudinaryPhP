@@ -10,6 +10,17 @@ require 'cloudinary/src/Uploader.php';
 require 'cloudinary/src/Api.php';
 ```
 
+Then configure cloudinary
+
+```
+\Cloudinary::config(array( 
+  "cloud_name" => "XXXXXXXXX",  //cloudinary cloud name
+  "api_key" => "XXXXXXXXXXXX", //cloudinary api key
+  "api_secret" => "XXXXXXXXXXXXXX", //cloudinary api secret
+  "secure" => true
+));
+```
+
 ##  Default Upload
 Use `\Cloudinary\Uploader::upload("file location");` to upload the picture to cloudinary.
 This uploads to the default cloudinary home folder and assigns a random name to it.
