@@ -8,6 +8,11 @@ This uploads to the default cloudinary home folder and assigns a random name to 
 
 ##  Upload with parameters
 You can customize the upload by adding parameters, such as file name, file folder and others
+`$response_with_parameters =  \Cloudinary\Uploader::upload("file location",
+    array(
+    include parameters here
+));
+`
 
 ## Getting response
 To get the uploaded file details, assign your upload to a variable, a json respnse is returned to it which you can get the file upload details from
