@@ -1,6 +1,12 @@
 # CloudinaryPhP
 This is to setup cloudinary file upload on php.
 
+First thing is to download the require the cloudinary files
+`require 'cloudinary/autoload.php';
+require 'cloudinary/src/Cloudinary.php';
+require 'cloudinary/src/Uploader.php';
+require 'cloudinary/src/Api.php';
+`
 
 ##  Default Upload
 Use `\Cloudinary\Uploader::upload("file location");` to upload the picture to cloudinary.
